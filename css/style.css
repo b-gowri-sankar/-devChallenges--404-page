@@ -1,0 +1,64 @@
+*,
+*::before,
+*::after {
+  font-family: "Space Mono", monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.home_page {
+  background-color: white;
+  height: 100vh; }
+  .home_page--title {
+    height: 20vh;
+    padding: 30px 50px; }
+  .home_page--main {
+    display: flex;
+    justify-content: center;
+    height: 70vh; }
+  .home_page--image {
+    background-image: url(../images/Scarecrow.png);
+    width: 60%;
+    height: 100%;
+    background-size: contain;
+    margin: 0 100px;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .home_page--right {
+    padding: 50px;
+    width: 40%;
+    align-self: center; }
+  .home_page--heading-1 {
+    font-weight: 700;
+    size: 64px;
+    letter-spacing: 1.5px;
+    margin-bottom: 50px; }
+  .home_page--paragraph {
+    color: #4f4f4f;
+    font-weight: 400;
+    margin-bottom: 50px; }
+  .home_page--button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer; }
+
+@media only screen and (max-width: 950px) {
+  .home_page--image {
+    margin: 0 30px;
+    width: 50%; }
+  .home_page--right {
+    width: 50%; } }
+
+@media only screen and (max-width: 750px) {
+  .home_page {
+    overflow-x: hidden; }
+    .home_page--main {
+      display: block; }
+    .home_page--image {
+      width: 100%;
+      margin: 0px; }
+    .home_page--right {
+      margin: 0px;
+      width: 100%; } }
